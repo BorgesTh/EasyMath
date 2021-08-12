@@ -1,0 +1,4 @@
+Tentar usar o método .map()
+Tentar usar Recursividade
+Olhar o código do jogo da velha para ver se existe uma expressão em JS para reiniciar o código (html)
+Tentar usar uma Função anônima
