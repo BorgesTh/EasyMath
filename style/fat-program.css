@@ -1,0 +1,17 @@
+h1#fatorial {
+    text-align: center;
+    user-select: none;
+    color: white;
+    font-size: 2.9em;
+    text-shadow: 1px 1px 3px black;
+}
+section#fatorial-box {
+    background: white;
+    width: 260px;
+    height: 330px;
+    padding: 20px;
+    transition: all ease 0.5s;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 3px;
+    opacity: 0.8;
+}
