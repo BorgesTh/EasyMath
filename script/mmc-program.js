@@ -2,14 +2,14 @@ let numbers = []
 let MMCcheck = true;
 let multiplier = 1;
 
-function addValues(input_number, printed_values) {
+function addValuesMMC(input_number, printed_values) {
     if (input_number <= 0) return;
     
     numbers.push(input_number);
     
     printed_values.innerHTML += `${numbers.length > 1 ? ', ' : ''}${input_number}`;
 
-    document.querySelector('button#btn-calc').disabled = false; 
+    document.querySelector('button#btn2-calc').disabled = false; 
 }
 
 function calculateMMC(printed_result) {
@@ -37,7 +37,7 @@ function calculateMMC(printed_result) {
 
         if (MMCcheck) {
             printed_result.innerHTML = higher_valueM;
-            document.querySelector('button#btn-calc').disabled = true;
+            document.querySelector('button#btn2-calc').disabled = true;
             higher_valueM = higher_value;
             multiplier = 1;
             return; 
@@ -54,20 +54,5 @@ function resetMMC(printed_values, printed_result) {
     numbers = []
     printed_values.innerHTML = ''
     printed_result.innerHTML = 'Resultado...'
-    document.querySelector('button#btn-calc').disabled = false;    
-}
-
-function copyContent(text) {
-    var type = "text/plain";
-    var blob = new Blob([text], { type });
-    var data = [new ClipboardItem({ [type]: blob })];
-
-    navigator.clipboard.write(data).then(
-        function () {
-        /* success */
-        },
-        function () {
-        /* failure */
-        }
-    );
+    document.querySelector('button#btn2-calc').disabled = false;    
 }

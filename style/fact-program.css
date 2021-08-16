@@ -1,25 +1,25 @@
-input#txt1-number {
+input#txt3-number {
     width: 262px;
     height: 25px;
 }
 
-button#btn1-add {
+button#btn3-add {
     margin-top: 10px;
     width: 270px;
     height: 35px;
 }
 
-h2#mult {
+h2#fact {
     text-align: center;
     margin: 15px 0px;
 }
 
-button#btn1-calc {
+button#btn3-calc {
     width: 270px;
     height: 35px;
 }
 
-div#result1-box {
+div#result3-box {
     width: 268px;
     height: 90px;
     border: 1px solid black;
@@ -27,19 +27,7 @@ div#result1-box {
     overflow-y: scroll;
 }
 
-div.printed-results {
-    padding: 2px 2px 0px;
-    margin-bottom: 1px;
-    cursor: pointer;
-    width: 265;
-    word-break: break-word;
-}
-
-div.printed-results:hover {
-    background: rgb(135, 194, 194);
-}
-
-button#btn1-reset {
+button#btn3-reset {
     width: 270px;
     height: 35px;
 }

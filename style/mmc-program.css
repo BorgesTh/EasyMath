@@ -9,63 +9,47 @@ section#mmc-box {
     background: white;
     transition: all ease 0.5s;
     box-shadow: 1px 1px 3px black;
-    opacity: 0.8;
 }
+
 div#add-box {
     display: grid;
     grid-template-rows: 30px 30px 80px;
     grid-template-columns: 300px 100px;
     padding-top: 10px;
 }
-label {
-    display: block;
-    grid-row-start: 1;
-    font-size: 1.3em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-input#txt-value {
+
+div#add-box > input#txt2-value {
     grid-row-start: 2;
     width: 270px;
     height: 25px;
     padding-left: 5px;
 }
-h2#mmc {
+
+div#add-box > h2#mmc {
     margin: auto;
     grid-row-start: 3;
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-button#btn-add {
+div#add-box > button#btn2-add {
+    width: auto;
+    height: auto;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-button#btn-calc {
-    width: 100%;
-    height: 35px;
-}
-div#result-box {
+
+div#result2-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 83, 0);
+    color: rgb(0, 0, 0);
     width: 100%;
     height: 90px;
     margin: 10px 0px;
     border: 1px solid rgba(0, 0, 0, 0.733);
     border-radius: 3px;
     
-}
-h3 {
-    cursor: pointer;
-}
-abbr {
-    text-decoration: none;
-}
-button#btn-reset {
-    width: 100%;
-    height: 35px;
 }
