@@ -27,7 +27,7 @@ section {
     transition: all ease 0.5s;
     box-shadow: 1px 1px 3px black;
     border-radius: 3px;
-    opacity: 1;
+    opacity: 0.9;
 }
 
 h1 {
