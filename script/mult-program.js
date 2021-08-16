@@ -14,6 +14,8 @@ function addValuesMult(input_number, printed_values) {
 
 function calculateMult(result_box) {
 
+    if (imputedMultValues == []) return; 
+
     let calculatedMultiples = [];
     
     result_box.innerHTML = '';

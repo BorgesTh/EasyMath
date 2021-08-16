@@ -13,7 +13,9 @@ function addValuesFact(input_number, printed_values) {
 }
 
 function calculateFactorials(result_box) {
-    
+
+    if (imputedFactValues = []) return;
+
     let calculatedFactorials = [];
 
     result_box.innerHTML = '';
