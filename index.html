@@ -62,8 +62,8 @@
                 <section id="factorial-box">
 
                     <label for="txt3-number">Adicione um ou mais números:</label>
-                    <input type="number" name="txt3-number" id="txt3-number">                    
-                    <button id="btn3-add" onclick="addValuesFact(Number(document.querySelector('input#txt3-number').value), document.querySelector('span#printed3-values'))">Adicionar Número</button>
+                    <input type="number" name="txt3-number" id="txt3-number">                     
+                    <button id="btn3-add" onclick="addValuesFact(Number(document.querySelector('input#txt3-number').value).toFixed(), document.querySelector('span#printed3-values'))">Adicionar Número</button>
                     
                     <h2 id="fact">F(<span id="printed3-values"></span>)</h2>
                     
