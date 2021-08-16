@@ -14,7 +14,7 @@ function addValuesMMC(input_number, printed_values) {
 
 function calculateMMC(printed_result) {
     if (numbers.length <= 1) return;
-    
+
     let higher_value = Math.max.apply(null, numbers) // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
     
     calculateMultiples(higher_value)
@@ -36,7 +36,7 @@ function calculateMMC(printed_result) {
         multiplier++
 
         if (MMCcheck) {
-            printed_result.innerHTML = higher_valueM;
+            printed_result.innerHTML = `<abbr title="copy"><h3 id="printed2-result">${higher_valueM}</h3></abbr>`;
             document.querySelector('button#btn2-calc').disabled = true;
             higher_valueM = higher_value;
             multiplier = 1;
@@ -51,8 +51,8 @@ function calculateMMC(printed_result) {
 
 function resetMMC(printed_values, printed_result) {
     if (numbers.length == 0) return;
-    numbers = []
-    printed_values.innerHTML = ''
-    printed_result.innerHTML = 'Resultado...'
+    numbers = [];
+    printed_values.innerHTML = '';
+    printed_result.innerHTML = '';
     document.querySelector('button#btn2-calc').disabled = false;    
 }

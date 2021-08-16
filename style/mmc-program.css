@@ -51,5 +51,16 @@ div#result2-box {
     margin: 10px 0px;
     border: 1px solid rgba(0, 0, 0, 0.733);
     border-radius: 3px;
-    
+}
+
+h3 {
+    width: 400px;
+    height: 88px;
+    text-align: center;
+    line-height: 90px;
+    border-radius: 3px;
+}
+
+h3:hover {
+    background: rgb(135, 194, 194);
 }

@@ -45,11 +45,13 @@
                     </div>
             
                     <div id="calc-box">
-                        <button id="btn2-calc" onclick="calculateMMC(document.querySelector('abbr#printed2-result'))">Calcular MMC</button>
-                        <div id="result2-box">
-                            <h3 onclick="copyContent(this.textContent)"><abbr title="copy" id="printed2-result">RESULTADO..</abbr></h3>
+                        <button id="btn2-calc" onclick="calculateMMC(document.querySelector('div#result2-box'))">Calcular MMC</button>
+    
+                        <div id="result2-box" onclick="copyContent(this.textContent)">
+                            
                         </div>
-                        <button id="btn2-reset" onclick="resetMMC(document.querySelector('span#printed2-values'), document.querySelector('abbr#printed2-result'))">Resetar</button>
+                        
+                        <button id="btn2-reset" onclick="resetMMC(document.querySelector('span#printed2-values'), document.querySelector('div#result2-box'))">Resetar</button>
                     </div>
 
                 </section>
