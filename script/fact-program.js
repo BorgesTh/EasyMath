@@ -14,7 +14,7 @@ function addValuesFact(input_number, printed_values) {
 
 function calculateFactorials(result_box) {
 
-    if (imputedFactValues.length < 1);
+    if (imputedFactValues.length < 1) return;
 
     let calculatedFactorials = [];
 
